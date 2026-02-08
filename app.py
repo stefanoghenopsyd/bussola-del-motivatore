@@ -21,7 +21,7 @@ try:
 except Exception as e:
     st.warning(f"⚠️ Logo non trovato in: {logo_path}. Verifica il nome del file.")
     # Opzionale: mostra un titolo testuale se l'immagine manca
-    st.title("GENERA")st.title("🧭 La Tua Bussola della Motivazione")
+    st.title("🧭 La Tua Bussola della Motivazione")
 
 # --- INTRODUZIONE ---
 st.markdown("""
