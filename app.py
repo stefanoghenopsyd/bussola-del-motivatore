@@ -7,8 +7,21 @@ st.set_page_config(page_title="Bussola della Motivazione", layout="centered")
 
 # --- HEADER: LOGO E TITOLO ---
 # Nota: Il file "GENERA Logo Colore.png" deve essere nella stessa cartella del file .py
-st.image("GENERA Logo Colore.png", width=300)
-st.title("🧭 La Tua Bussola della Motivazione")
+import os
+
+# Ottieni il percorso assoluto della cartella in cui si trova questo script
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Costruisci il percorso completo dell'immagine
+logo_path = os.path.join(current_dir, "GENERA Logo Colore.png")
+
+# Carica l'immagine (con gestione dell'errore se ancora non la trova)
+try:
+    st.image(logo_path, width=300)
+except Exception as e:
+    st.warning(f"⚠️ Logo non trovato in: {logo_path}. Verifica il nome del file.")
+    # Opzionale: mostra un titolo testuale se l'immagine manca
+    st.title("GENERA")st.title("🧭 La Tua Bussola della Motivazione")
 
 # --- INTRODUZIONE ---
 st.markdown("""
