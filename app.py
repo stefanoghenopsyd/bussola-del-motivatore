@@ -6,14 +6,14 @@ import plotly.graph_objects as go
 st.set_page_config(page_title="Bussola della Motivazione", layout="centered")
 
 # --- HEADER: LOGO E TITOLO ---
-# Nota: Il file "GENERA Logo Colore.png" deve essere nella stessa cartella del file .py
+# Nota: Il file "GENERA Logo Colore (1).png" deve essere nella stessa cartella del file .py
 import os
 
 # Ottieni il percorso assoluto della cartella in cui si trova questo script
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Costruisci il percorso completo dell'immagine
-logo_path = os.path.join(current_dir, "GENERA Logo Colore.png")
+logo_path = os.path.join(current_dir, "GENERA Logo Colore (1).png")
 
 # Carica l'immagine (con gestione dell'errore se ancora non la trova)
 try:
